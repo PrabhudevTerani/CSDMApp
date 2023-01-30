@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8cf3bcd497302110149bf8890353af64" label="Field Mapping Definition" max_length="40" name="x_441145_csdm_migr_field_mapping_definition" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element label="Source class" max_length="32" name="source_class" reference="sys_db_object" type="reference"/>
+        <element label="Target class" max_length="32" name="target_class" reference="sys_db_object" type="reference"/>
+        <index name="index">
+            <element name="source_class"/>
+        </index>
+        <index name="index2">
+            <element name="target_class"/>
+        </index>
+    </element>
+</database>

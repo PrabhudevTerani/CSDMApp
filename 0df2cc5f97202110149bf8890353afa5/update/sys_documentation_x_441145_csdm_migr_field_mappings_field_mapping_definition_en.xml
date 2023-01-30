@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="field_mapping_definition" label="Field mapping definition" language="en" table="x_441145_csdm_migr_field_mappings">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>field_mapping_definition</element>
+            <help/>
+            <hint/>
+            <label>Field mapping definition</label>
+            <language>en</language>
+            <name>x_441145_csdm_migr_field_mappings</name>
+            <plural>Field mapping definitions</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-30 17:57:43</sys_created_on>
+            <sys_name>Field mapping definition</sys_name>
+            <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+            <sys_update_name>sys_documentation_x_441145_csdm_migr_field_mappings_field_mapping_definition_en</sys_update_name>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

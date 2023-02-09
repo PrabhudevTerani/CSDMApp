@@ -14,7 +14,7 @@
         <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
         <sys_update_name>sys_ui_policy_action_e59749d897702110149bf8890353af44</sys_update_name>
         <table>x_441145_csdm_migr_field_mappings</table>
-        <ui_policy display_value="Make Class read-only">2c5705d897702110149bf8890353af7f</ui_policy>
+        <ui_policy display_value="Make Class and Field Definition read-only">2c5705d897702110149bf8890353af7f</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

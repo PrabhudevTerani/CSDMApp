@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>source_class</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>prabhudev.terani</sys_created_by>
+        <sys_created_on>2023-02-05 06:38:17</sys_created_on>
+        <sys_id>fa0b59c697302110149bf8890353afbc</sys_id>
+        <sys_name>source_class</sys_name>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_update_name>sys_ui_policy_action_fa0b59c697302110149bf8890353afbc</sys_update_name>
+        <table>x_441145_csdm_migr_field_mapping_definition</table>
+        <ui_policy display_value="Make Source and Target Class mandatory">88ea95c697302110149bf8890353afaa</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

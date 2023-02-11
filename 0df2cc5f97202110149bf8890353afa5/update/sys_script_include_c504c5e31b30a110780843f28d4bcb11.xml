@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_441145_csdm_migr.MigrationServiceUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>MigrationServiceUtils</name>
+        <script><![CDATA[var MigrationServiceUtils = Class.create();
+MigrationServiceUtils.prototype = {
+    initialize: function() {},
+    createStgRec: function(recID) {
+        var grC = new GlideRecord('cmdb_ci');
+        if (grC.get(recID)) {
+            var mapArr = grC.getValue('x_441145_csdm_migr_migration_definition_list').split(',');
+            for (var k in mapArr) {
+                var grStag = new GlideRecord('x_441145_csdm_migr_csdm_migration_staging');
+                grStag.initialize();
+                var fieldMapGR = new GlideRecord('x_441145_csdm_migr_field_mappings');
+                fieldMapGR.addEncodedQuery("field_mapping_definition=" + mapArr[k]);
+                fieldMapGR.query();
+                while (fieldMapGR.next()) {
+                    grStag[fieldMapGR.source_field.element] = grC.getValue(fieldMapGR.target_field.element);
+                }
+                grStag.setValue('target_class', fieldMapGR.field_mapping_definition.target_class);
+                var stgID = grStag.insert();
+                if (stgID) {
+                    grC.setValue('x_441145_csdm_migr_staging_record', stgID);
+                    grC.update();
+                }
+
+            }
+        }
+    },
+
+    // Create Staging relationship records with current record as parent but consider Staging record while creating relationships if it exists.
+
+    createStgRelRecParent: function(recID) {
+        var grC = new GlideRecord('cmdb_ci');
+        if (grC.get(recID)) {
+            var grRel = new GlideRecord('cmdb_rel_ci');
+            grRel.addEncodedQuery('parent=' + recID);
+            grRel.query();
+            while (grRel.next()) {
+                var grStagRel = new GlideRecord('x_441145_csdm_migr_relationship_staging'); //x_441145_csdm_migr_relationship_staging            /           
+                grStagRel.initialize();
+                if ((grC.x_441145_csdm_migr_staging_record)) {
+                    grStagRel.setValue('parent', grC.getValue('x_441145_csdm_migr_staging_record'));
+                    grStagRel.setValue('child', grRel.getValue('child'));
+                    grStagRel.setValue('type', grRel.getValue('type'));
+                    grStagRel.insert();
+
+                } else {
+                    grStagRel.setValue('parent', grC.getValue('parent'));
+                    grStagRel.setValue('child', grRel.getValue('child'));
+                    grStagRel.setValue('type', grRel.getValue('type'));
+                    grStagRel.insert();
+                }
+            }
+        }
+    },
+
+    // Create Staging relationship records with current record as child but consider Staging record while creating relationships if it exists.
+    createStgRelRecChild: function(recID) {
+        var grC = new GlideRecord('cmdb_ci');
+        if (grC.get(recID)) {
+            var grRel = new GlideRecord('cmdb_rel_ci');
+            grRel.addEncodedQuery('child=' + recID);
+            grRel.query();
+            while (grRel.next()) {
+                var grStagRel = new GlideRecord('x_441145_csdm_migr_relationship_staging');
+                if (grC.x_441145_csdm_migr_staging_record) {
+                    grStagRel.initialize();
+                    grStagRel.parent = grRel.parent;
+                    grStagRel.child = grC.x_441145_csdm_migr_staging_record;
+                    grStagRel.type = grRel.type;
+                    grStagRel.insert();
+                } else {
+                    grStagRel.initialize();
+                    grStagRel.parent = grRel.parent;
+                    grStagRel.child = grRel.child;
+                    grStagRel.type = grRel.type;
+                    grStagRel.insert();
+                }
+            }
+        }
+    },
+
+    migrateRelRec: function(recordSID) {
+        this.createStgRelRecParent(recordSID);
+        this.createStgRelRecChild(recordSID);
+    },
+
+    createGrpStgRec: function(recID) {
+        var grcGrp = new GlideRecord('sys_user_group');
+        if (grcGrp.get(recID)) {
+
+            var grStag = new GlideRecord('x_441145_csdm_migr_csdm_migration_staging');
+            grStag.initialize();
+            var fieldMapGR = new GlideRecord('x_441145_csdm_migr_field_mappings');
+            fieldMapGR.addEncodedQuery("field_mapping_definition=" + grcGrp.getValue('u_441145_csdm_migr_migration_definition_list'));
+            fieldMapGR.query();
+            while (fieldMapGR.next()) {
+                grStag[fieldMapGR.source_field.element] = grcGrp.getValue(fieldMapGR.target_field.element);
+            }
+            grStag.setValue('target_class', fieldMapGR.field_mapping_definition.target_class);
+            grStag.setValue('support_group', grcGrp.getUniqueValue());
+
+            grStag.setValue('u_service_classification', grcGrp.u_441145_csdm_migr_migration_definition.u_service_classification);
+            var stgID = grStag.insert();
+
+            // grcGrp.setValue('u_441145_csdm_migr_staging_record',stgID);
+            // gs.info(grcGrp.update());
+        }
+    },
+
+    type: 'MigrationServiceUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>mahesh.kuratti@plat4mation.com</sys_created_by>
+        <sys_created_on>2023-02-09 20:48:39</sys_created_on>
+        <sys_id>c504c5e31b30a110780843f28d4bcb11</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>MigrationServiceUtils</sys_name>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_update_name>sys_script_include_c504c5e31b30a110780843f28d4bcb11</sys_update_name>
+        <sys_updated_by>mahesh.kuratti@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2023-02-11 06:13:02</sys_updated_on>
+    </sys_script_include>
+</record_update>

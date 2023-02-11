@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>read</operation>
+        <source_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>mahesh.kuratti@plat4mation.com</sys_created_by>
+        <sys_created_on>2023-02-11 06:35:26</sys_created_on>
+        <sys_id>62f39040970de1103e607a200153af7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_user</sys_name>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_update_name>sys_scope_privilege_62f39040970de1103e607a200153af7f</sys_update_name>
+        <sys_updated_by>mahesh.kuratti@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2023-02-11 06:35:26</sys_updated_on>
+        <target_name>sys_user</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>

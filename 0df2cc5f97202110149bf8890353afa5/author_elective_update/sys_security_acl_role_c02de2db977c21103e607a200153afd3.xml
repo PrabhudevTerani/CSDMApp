@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>nagendra.swamy@plat4mation.com</sys_created_by>
+        <sys_created_on>2023-02-09 09:49:07</sys_created_on>
+        <sys_id>c02de2db977c21103e607a200153afd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_441145_csdm_migr_csdm_staging.x_441145_csdm_migr.csdm_staging_user</sys_name>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_security_acl display_value="x_441145_csdm_migr_csdm_staging">882de2db977c21103e607a200153afcc</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_c02de2db977c21103e607a200153afd3</sys_update_name>
+        <sys_updated_by>nagendra.swamy@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2023-02-09 09:49:07</sys_updated_on>
+        <sys_user_role display_value="x_441145_csdm_migr.csdm_staging_user" name="x_441145_csdm_migr.csdm_staging_user">842de2db977c21103e607a200153af78</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</application>
+        <file_path/>
+        <instance_id>13bd9f4fdb176244cbf6d5b0cf9619bd</instance_id>
+        <instance_name>plat4mationdemo5</instance_name>
+        <name>sys_security_acl_role_c02de2db977c21103e607a200153afd3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>nagendra.swamy@plat4mation.com</sys_created_by><sys_created_on>2023-02-09 09:49:07</sys_created_on><sys_id>c02de2db977c21103e607a200153afd3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_441145_csdm_migr_csdm_staging.x_441145_csdm_migr.csdm_staging_user</sys_name><sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package><sys_policy/><sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope><sys_security_acl display_value="x_441145_csdm_migr_csdm_staging">882de2db977c21103e607a200153afcc</sys_security_acl><sys_update_name>sys_security_acl_role_c02de2db977c21103e607a200153afd3</sys_update_name><sys_updated_by>nagendra.swamy@plat4mation.com</sys_updated_by><sys_updated_on>2023-02-09 09:49:07</sys_updated_on><sys_user_role display_value="x_441145_csdm_migr.csdm_staging_user" name="x_441145_csdm_migr.csdm_staging_user">842de2db977c21103e607a200153af78</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1158517621</payload_hash>
+        <record_name>x_441145_csdm_migr_csdm_staging.x_441145_csdm_migr.csdm_staging_user</record_name>
+        <reverted_from/>
+        <source>cceb2e1b977c21103e607a200153afd2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>nagendra.swamy@plat4mation.com</sys_created_by>
+        <sys_created_on>2023-02-09 09:49:07</sys_created_on>
+        <sys_id>042de2db977c21103e607a200153afd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1863594278e0000001</sys_recorded_at>
+        <sys_updated_by>nagendra.swamy@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2023-02-09 09:49:07</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>082de2db7c7c21106fac2ec0c00fead7</update_guid>
+        <update_guid_history>082de2db7c7c21106fac2ec0c00fead7:1158517621</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2023-02-10 01:09:26">ecad636f1bb8a110780843f28d4bcb87</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mahesh.kuratti@plat4mation.com</sys_created_by>
+        <sys_created_on>2023-02-10 09:09:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>29805dccff1247bc9d0811d29b0d53a4</sys_id>
+        <sys_metadata>c02de2db977c21103e607a200153afd3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_441145_csdm_migr_csdm_staging.x_441145_csdm_migr.csdm_staging_user</sys_name>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_parent display_value="">882de2db977c21103e607a200153afcc</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_scope_delete display_value="">00ed709270784b088ef2c5e061581ea4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_c02de2db977c21103e607a200153afd3</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_c02de2db977c21103e607a200153afd3">042de2db977c21103e607a200153afd8</sys_update_version>
+        <sys_updated_by>mahesh.kuratti@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2023-02-10 09:09:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

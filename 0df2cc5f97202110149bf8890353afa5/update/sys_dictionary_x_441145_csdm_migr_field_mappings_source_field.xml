@@ -10,8 +10,8 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice>1</choice>
-        <choice_field/>
+        <choice/>
+        <choice_field>use_reference_qualifier</choice_field>
         <choice_table>sys_dictionary</choice_table>
         <column_label>Source field</column_label>
         <comments/>
@@ -57,6 +57,8 @@
         <sys_policy/>
         <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
         <sys_update_name>sys_dictionary_x_441145_csdm_migr_field_mappings_source_field</sys_update_name>
+        <sys_updated_by>akshith.ananthaswamy@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2023-02-10 08:42:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

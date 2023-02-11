@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="a331d62cf90211108c8bd16244dfe7ba" defaultsort="-1" dynamic_creation_script="// default on the table level is to create a server&#13;&#10;&#13;&#10;var gr = new GlideRecord(&quot;cmdb_ci_server&quot;);&#13;&#10;gr.initialize();&#13;&#10;gr.name=value;&#13;&#10;gr.insert();" extends="cmdb" label="Configuration Item" max_length="40" name="cmdb_ci" type="collection">
-        <element label="Migration definition" max_length="32" name="x_441145_csdm_migr_migration_definition" reference="x_441145_csdm_migr_field_mapping_definition" type="reference"/>
+    <element db_object_id="98676239db0113003cba7646bf96197b" defaultsort="-1" dynamic_creation_script="// default on the table level is to create a server&#13;&#10;&#13;&#10;var gr = new GlideRecord(&quot;cmdb_ci_server&quot;);&#13;&#10;gr.initialize();&#13;&#10;gr.name=value;&#13;&#10;gr.insert();" extends="cmdb" label="Configuration Item" max_length="40" name="cmdb_ci" type="collection">
+        <element label="Migration Definition List" max_length="4000" name="x_441145_csdm_migr_migration_definition_list" reference="x_441145_csdm_migr_field_mapping_definition" type="glide_list"/>
+        <element label="Staging record" max_length="32" name="x_441145_csdm_migr_staging_record" reference="x_441145_csdm_migr_csdm_migration_staging" type="reference"/>
     </element>
 </database>

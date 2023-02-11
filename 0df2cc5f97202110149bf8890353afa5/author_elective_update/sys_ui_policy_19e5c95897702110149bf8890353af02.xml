@@ -78,6 +78,7 @@
         <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
         <sys_id>5293e568f3354310a6a97cb3f66eb090</sys_id>
         <sys_metadata>19e5c95897702110149bf8890353af02</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Set Source and Target class</sys_name>
         <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
         <sys_parent display_value="Field Mappings">1d16f09897302110149bf8890353af29</sys_parent>
@@ -86,5 +87,7 @@
         <sys_scope_delete display_value="">00ed709270784b088ef2c5e061581ea4</sys_scope_delete>
         <sys_update_name>sys_ui_policy_19e5c95897702110149bf8890353af02</sys_update_name>
         <sys_update_version display_value="sys_ui_policy_19e5c95897702110149bf8890353af02">14164d5897702110149bf8890353af8f</sys_update_version>
+        <sys_updated_by>prabhudev.terani@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2023-02-09 05:42:11</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

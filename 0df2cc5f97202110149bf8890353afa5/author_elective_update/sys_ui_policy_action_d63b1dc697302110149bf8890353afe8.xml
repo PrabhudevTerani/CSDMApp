@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>name</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>prabhudev.terani</sys_created_by>
+        <sys_created_on>2023-02-05 06:39:02</sys_created_on>
+        <sys_id>d63b1dc697302110149bf8890353afe8</sys_id>
+        <sys_name>name</sys_name>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_update_name>sys_ui_policy_action_d63b1dc697302110149bf8890353afe8</sys_update_name>
+        <table>x_441145_csdm_migr_field_mapping_definition</table>
+        <ui_policy display_value="Make Source and Target Class mandatory">88ea95c697302110149bf8890353afaa</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</application>
+        <file_path/>
+        <instance_id>13bd9f4fdb176244cbf6d5b0cf9619bd</instance_id>
+        <instance_name>plat4mationdemo5</instance_name>
+        <name>sys_ui_policy_action_d63b1dc697302110149bf8890353afe8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>name</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>prabhudev.terani</sys_created_by>
+        <sys_created_on>2023-02-05 06:39:02</sys_created_on>
+        <sys_id>d63b1dc697302110149bf8890353afe8</sys_id>
+        <sys_name>name</sys_name>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_update_name>sys_ui_policy_action_d63b1dc697302110149bf8890353afe8</sys_update_name>
+        <table>x_441145_csdm_migr_field_mapping_definition</table>
+        <ui_policy display_value="Make Source and Target Class mandatory">88ea95c697302110149bf8890353afaa</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>]]></payload>
+        <payload_hash>1357098934</payload_hash>
+        <record_name>name</record_name>
+        <reverted_from/>
+        <source>0924b11f1b706110780843f28d4bcb20</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>prabhudev.terani@plat4mation.com</sys_created_by>
+        <sys_created_on>2023-02-09 05:42:10</sys_created_on>
+        <sys_id>6a9435131bb06110780843f28d4bcb80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18634b211050000001</sys_recorded_at>
+        <sys_updated_by>prabhudev.terani@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2023-02-09 05:42:10</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>2a9435138bb06110602e3094a6d5f280</update_guid>
+        <update_guid_history>2a9435138bb06110602e3094a6d5f280:1357098934</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bharatesh.sannappanavar@plat4mation.com</sys_created_by>
+        <sys_created_on>2023-02-10 19:23:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>7eda7112f1b648fc903460b36f85e064</sys_id>
+        <sys_metadata>d63b1dc697302110149bf8890353afe8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>name</sys_name>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_parent display_value="Make Source and Target Class mandatory">88ea95c697302110149bf8890353afaa</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_scope_delete display_value="">00ed709270784b088ef2c5e061581ea4</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_d63b1dc697302110149bf8890353afe8</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_d63b1dc697302110149bf8890353afe8">6a9435131bb06110780843f28d4bcb80</sys_update_version>
+        <sys_updated_by>bharatesh.sannappanavar@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2023-02-10 19:23:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

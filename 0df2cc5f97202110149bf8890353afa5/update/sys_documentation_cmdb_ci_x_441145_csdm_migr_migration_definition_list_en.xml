@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_441145_csdm_migr_migration_definition_list" label="Migration Definition List" language="en" table="cmdb_ci">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_441145_csdm_migr_migration_definition_list</element>
+            <help/>
+            <hint/>
+            <label>Migration Definition List</label>
+            <language>en</language>
+            <name>cmdb_ci</name>
+            <plural>Migration Definition Lists</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>mahesh.kuratti@plat4mation.com</sys_created_by>
+            <sys_created_on>2023-02-10 18:37:19</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Migration Definition List</sys_name>
+            <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+            <sys_update_name>sys_documentation_cmdb_ci_x_441145_csdm_migr_migration_definition_list_en</sys_update_name>
+            <sys_updated_by>mahesh.kuratti@plat4mation.com</sys_updated_by>
+            <sys_updated_on>2023-02-10 18:37:19</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

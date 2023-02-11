@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="x_441145_csdm_migr_field_mapping_definition" element="NULL" name="x_441145_csdm_migr_field_mapping_definition" parent="NULL" relationship="NULL" sys_domain="global" view="889fc260f90211108c8bd16244dfe72a">a486a10697702110149bf8890353af01</list_id>
+            <list_id display_value="x_441145_csdm_migr_field_mapping_definition" element="NULL" name="x_441145_csdm_migr_field_mapping_definition" parent="NULL" relationship="NULL" sys_domain="global" view="d3552271db0113003cba7646bf961981">a486a10697702110149bf8890353af01</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -31,13 +31,16 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>a486a10697702110149bf8890353af01</sys_id>
+            <sys_mod_count>0</sys_mod_count>
             <sys_name>x_441145_csdm_migr_field_mapping_definition</sys_name>
             <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
             <sys_policy/>
             <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
             <sys_update_name>sys_ui_list_x_441145_csdm_migr_field_mapping_definition_sys_ref_list</sys_update_name>
+            <sys_updated_by>prabhudev.terani@plat4mation.com</sys_updated_by>
+            <sys_updated_on>2023-02-09 05:42:09</sys_updated_on>
             <sys_user/>
-            <view display_value="Reference List" name="sys_ref_list">889fc260f90211108c8bd16244dfe72a</view>
+            <view display_value="Reference List" name="sys_ref_list">d3552271db0113003cba7646bf961981</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

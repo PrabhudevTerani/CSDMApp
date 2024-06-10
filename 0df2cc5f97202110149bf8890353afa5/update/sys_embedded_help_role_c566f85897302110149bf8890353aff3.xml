@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_441145_csdm_migr.field_mappings_user" name="x_441145_csdm_migr.field_mappings_user">c166f85897302110149bf8890353aff2</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-30 17:28:35</sys_created_on>
+        <sys_id>c566f85897302110149bf8890353aff3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>c166f85897302110149bf8890353aff2</sys_name>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_update_name>sys_embedded_help_role_c566f85897302110149bf8890353aff3</sys_update_name>
+        <sys_updated_by>prabhudev.terani@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2023-02-09 05:42:07</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

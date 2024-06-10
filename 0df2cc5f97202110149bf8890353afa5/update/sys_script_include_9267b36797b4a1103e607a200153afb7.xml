@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_441145_csdm_migr.CSDMUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CSDMUtils</name>
+        <script><![CDATA[var CSDMUtils = Class.create();
+CSDMUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getCI: function(service, service_offering) { //Returns CI(s) based on Parameters passed
+        if (service_offering != '')
+            return 'sys_idIN' + this.getRelationsResult(service_offering.sys_id, 'parent');
+        else if (service != '')
+            return 'sys_idIN' + this.getRelationsResult(gs.getProperty('x_441145_csdm_migr.csdm.whitelist.service_offering') + ',' + this.getChildOffering(service.sys_id), 'parent');
+        else
+            return 'operational_statusNOT IN2,6';
+    },
+
+    getServiceOffering: function(service, ci) { //Returns Service offering(s) based on Parameters passed
+        var query;
+
+        if (service != '' && ci != '')
+            query = 'sys_idIN' + this.getCommonRec(this.getRelationsResult(service.sys_id, 'parent'), ci.sys_id);
+        if (service != '')
+            query = 'parent.sys_idIN' + service.sys_id;
+        else if (ci != '')
+            query = 'sys_idIN' + this.getRelationsResult(ci.sys_id, 'child');
+        else
+            query = 'operational_statusNOT IN2,6';
+
+        if (gs.getProperty('x_441145_csdm_migr.csdm.whitelist.service_offering') != '')
+            return query + '^ORsys_idIN' + gs.getProperty('x_441145_csdm_migr.csdm.whitelist.service_offering');
+
+        return query;
+
+    },
+
+    getService: function(service_offering, ci) { //Returns Service(s) based on Parameters passed
+
+        if (service_offering.parent != '')
+            return 'sys_idIN' + service_offering.parent;
+        else if (service_offering != '')
+            return 'sys_idIN' + this.getRelationsResult(service_offering.sys_id, 'child');
+        else if (ci != '') {
+            var serviceids = [];
+            var services = new GlideRecord('service_offering');
+            services.addEncodedQuery('sys_idIN' + this.getRelationsResult(ci.sys_id, 'child') + ',' + gs.getProperty('x_441145_csdm_migr.csdm.whitelist.service_offering'));
+            services.query();
+            while (services.next())
+                serviceids.push(services.parent.sys_id);
+
+            return 'sys_idIN' + serviceids.toString();
+        } else
+            return 'operational_statusNOT IN2,6';
+
+    },
+
+    getRelationsResult: function(value, relation) { //Retunrs ID(s) based on Relation
+        var result = [];
+        var query = (relation == 'parent') ? gs.getProperty('x_441145_csdm_migr.csdm.parent.query') : gs.getProperty('x_441145_csdm_migr.csdm.child.query');
+
+        var relations = new GlideRecord('cmdb_rel_ci');
+        relations.addEncodedQuery(query + value.toString());
+        relations.query()
+
+        while (relations.next())
+            (relation == 'parent') ? result.push(relations.child.sys_id) : result.push(relations.parent.sys_id);
+
+        return result.toString();
+    },
+
+    getCommonRec: function(value1, value2) { //Returns common value based on Values Passed
+        var commonrec = new GlideRecord('cmdb_rel_ci');
+        commonrec.addEncodedQuery('parent.operational_statusNOT IN2,6^parent.sys_idIN' + value1 + '^child.operational_statusNOT IN2,6^child.sys_idIN' + value2);
+        commonrec.query();
+        result = [];
+        while (commonrec.next()) {
+            result.push(commonrec.parent);
+        }
+        return result.toString();
+    },
+
+    getChildOffering: function(service) {
+        var result = [];
+        var offering = new GlideRecordSecure('service_offering');
+        offering.addQuery('parent', service);
+        offering.query();
+        while (offering.next())
+            result.push(offering.sys_id);
+
+        return result.toString();
+    },
+
+    type: 'CSDMUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Sureshbabu.Ganesan@plat4mation.com</sys_created_by>
+        <sys_created_on>2023-02-10 09:58:55</sys_created_on>
+        <sys_id>9267b36797b4a1103e607a200153afb7</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>CSDMUtils</sys_name>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_update_name>sys_script_include_9267b36797b4a1103e607a200153afb7</sys_update_name>
+        <sys_updated_by>Sureshbabu.Ganesan@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2023-02-10 14:17:56</sys_updated_on>
+    </sys_script_include>
+</record_update>

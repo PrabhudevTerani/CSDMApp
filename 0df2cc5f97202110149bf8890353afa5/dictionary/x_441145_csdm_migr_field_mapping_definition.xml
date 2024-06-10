@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8cf3bcd497302110149bf8890353af64" label="Field Mapping Definition" max_length="40" name="x_441145_csdm_migr_field_mapping_definition" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;// Add your code here&#10;&#9;return current.source_class.getDisplayValue()+' -&gt; '+current.target_class.getDisplayValue();  // return the calculated value&#10;&#10;})(current);" label="Name" max_length="100" name="name" type="string"/>
+        <element label="Source class" max_length="32" name="source_class" reference="sys_db_object" type="reference"/>
+        <element label="Target class" max_length="32" name="target_class" reference="sys_db_object" type="reference"/>
+        <element choice="3" label="Service classification" max_length="40" name="u_service_classification" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Application Service" value="Application Service"/>
+                <element inactive_on_update="false" label="Billable Service" value="Billable Service"/>
+                <element inactive_on_update="false" label="Business Service" value="Business Service"/>
+                <element inactive_on_update="false" label="Service Offering" value="Service Offering"/>
+                <element inactive_on_update="false" label="Shared Service" value="Shared Service"/>
+                <element inactive_on_update="false" label="Technical Service" value="Technical Service"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="source_class"/>
+        </index>
+        <index name="index2">
+            <element name="target_class"/>
+        </index>
+    </element>
+</database>

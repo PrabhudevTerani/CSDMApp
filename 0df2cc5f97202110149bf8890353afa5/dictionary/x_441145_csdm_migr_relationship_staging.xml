@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="099a6bd397f061103e607a200153afb7" label="Relationship Staging" max_length="40" name="x_441145_csdm_migr_relationship_staging" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Child" max_length="32" name="child" reference="cmdb_ci" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="3" default="always" label="Connection strength" max_length="40" name="connection_strength" type="string">
+            <choice/>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Parent" max_length="32" name="parent" reference="cmdb_ci" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Percent outage" max_length="40" name="percent_outage" type="integer"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Port" max_length="40" name="port" type="integer"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Type" max_length="32" name="type" reference="cmdb_rel_type" reference_cascade_rule="delete" type="reference"/>
+        <index name="index">
+            <element name="child"/>
+        </index>
+        <index name="index2">
+            <element name="parent"/>
+        </index>
+        <index name="index3">
+            <element name="type"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_restricted_caller_access">
+    <sys_restricted_caller_access action="DELETE">
+        <description/>
+        <operation>read</operation>
+        <rca_type>real_rca</rca_type>
+        <source/>
+        <source_scope display_value="Global">global</source_scope>
+        <source_table/>
+        <source_type>5</source_type>
+        <status>2</status>
+        <sys_class_name>sys_restricted_caller_access</sys_class_name>
+        <sys_created_by>mahesh.kuratti@plat4mation.com</sys_created_by>
+        <sys_created_on>2023-02-11 04:25:51</sys_created_on>
+        <sys_id>1946777f9778e1103e607a200153af9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>global</sys_name>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_update_name>sys_restricted_caller_access_1946777f9778e1103e607a200153af9d</sys_update_name>
+        <sys_updated_by>mahesh.kuratti@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2023-02-11 04:25:51</sys_updated_on>
+        <target/>
+        <target_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</target_scope>
+        <target_table/>
+        <target_type>3</target_type>
+    </sys_restricted_caller_access>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</application>
+        <file_path/>
+        <instance_id>13bd9f4fdb176244cbf6d5b0cf9619bd</instance_id>
+        <instance_name>plat4mationdemo5</instance_name>
+        <name>sys_restricted_caller_access_1946777f9778e1103e607a200153af9d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_restricted_caller_access"><sys_restricted_caller_access action="INSERT_OR_UPDATE"><description/><operation>read</operation><rca_type>real_rca</rca_type><source/><source_scope display_value="Global">global</source_scope><source_table/><source_type>5</source_type><status>2</status><sys_class_name>sys_restricted_caller_access</sys_class_name><sys_created_by>mahesh.kuratti@plat4mation.com</sys_created_by><sys_created_on>2023-02-11 04:25:51</sys_created_on><sys_id>1946777f9778e1103e607a200153af9d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>global</sys_name><sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package><sys_policy/><sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope><sys_update_name>sys_restricted_caller_access_1946777f9778e1103e607a200153af9d</sys_update_name><sys_updated_by>mahesh.kuratti@plat4mation.com</sys_updated_by><sys_updated_on>2023-02-11 04:25:51</sys_updated_on><target/><target_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</target_scope><target_table/><target_type>3</target_type></sys_restricted_caller_access></record_update>]]></payload>
+        <payload_hash>-798353785</payload_hash>
+        <record_name>global</record_name>
+        <reverted_from/>
+        <source>7358575f1b386110780843f28d4bcbda</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mahesh.kuratti@plat4mation.com</sys_created_by>
+        <sys_created_on>2023-02-11 04:25:51</sys_created_on>
+        <sys_id>1c563b7f9778e1103e607a200153afd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1863eb8ea2c0000001</sys_recorded_at>
+        <sys_updated_by>mahesh.kuratti@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2023-02-11 04:25:51</sys_updated_on>
+        <type>Restricted Caller Access Privilege</type>
+        <update_guid>10563b7f2e78e11083696dd473445bd0</update_guid>
+        <update_guid_history>10563b7f2e78e11083696dd473445bd0:-798353785</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mahesh.kuratti@plat4mation.com</sys_created_by>
+        <sys_created_on>2023-02-11 04:26:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_restricted_caller_access">sys_restricted_caller_access</sys_db_object>
+        <sys_id>a2cb8f7305124c79881a05421c235891</sys_id>
+        <sys_metadata>1946777f9778e1103e607a200153af9d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>global</sys_name>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_scope_delete display_value="">00ed709270784b088ef2c5e061581ea4</sys_scope_delete>
+        <sys_update_name>sys_restricted_caller_access_1946777f9778e1103e607a200153af9d</sys_update_name>
+        <sys_update_version display_value="sys_restricted_caller_access_1946777f9778e1103e607a200153af9d">1c563b7f9778e1103e607a200153afd0</sys_update_version>
+        <sys_updated_by>mahesh.kuratti@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2023-02-11 04:26:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

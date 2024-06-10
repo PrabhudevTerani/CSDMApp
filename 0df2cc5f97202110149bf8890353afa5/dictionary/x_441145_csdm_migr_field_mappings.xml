@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1d16f09897302110149bf8890353af29" label="Field Mappings" max_length="40" name="x_441145_csdm_migr_field_mappings" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element display="true" label="Field mapping definition" max_length="32" name="field_mapping_definition" reference="x_441145_csdm_migr_field_mapping_definition" type="reference"/>
+        <element attributes="ref_auto_completer=AJAXReferenceChoice" choice="1" choice_table="sys_db_object" label="Source class" max_length="32" name="source_class" reference="sys_db_object" type="reference">
+            <choice/>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice_field="use_reference_qualifier" choice_table="sys_dictionary" label="Source field" max_length="32" name="source_field" reference="sys_dictionary" reference_qual="javascript:&quot;name=&quot; + current.field_mapping_definition.source_class.name;" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Target class" max_length="32" name="target_class" reference="sys_db_object" type="reference"/>
+        <element label="Target field" max_length="32" name="target_field" reference="sys_dictionary" reference_qual="javascript:&quot;name=&quot; + current.field_mapping_definition.target_class.name;" type="reference" use_reference_qualifier="advanced"/>
+        <index name="index">
+            <element name="field_mapping_definition"/>
+        </index>
+        <index name="index2">
+            <element name="source_class"/>
+        </index>
+        <index name="index3">
+            <element name="source_field"/>
+        </index>
+        <index name="index4">
+            <element name="target_class"/>
+        </index>
+        <index name="index5">
+            <element name="target_field"/>
+        </index>
+    </element>
+</database>

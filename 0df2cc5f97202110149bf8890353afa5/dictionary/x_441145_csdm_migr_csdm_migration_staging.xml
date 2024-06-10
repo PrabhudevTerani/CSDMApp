@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="81eda0a3973861103e607a200153af79" extends="cmdb_ci" label="CSDM Migration Staging" max_length="40" name="x_441145_csdm_migr_csdm_migration_staging" type="collection">
+        <element label="Ready to Sync" max_length="40" name="ready_to_sync" type="boolean"/>
+        <element label="Target class" max_length="32" name="target_class" reference="sys_db_object" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Service classification" max_length="40" name="u_service_classification" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Business Service" sequence="0" value="Business Service"/>
+                <element inactive_on_update="false" label="Technical Service" sequence="1" value="Technical Service"/>
+                <element inactive_on_update="false" label="Service Offering" sequence="2" value="Service Offering"/>
+                <element inactive_on_update="false" label="Shared Service" sequence="3" value="Shared Service"/>
+                <element inactive_on_update="false" label="Application Service" sequence="4" value="Application Service"/>
+                <element inactive_on_update="false" label="Billable Service" sequence="5" value="Billable Service"/>
+            </choice>
+        </element>
+    </element>
+</database>

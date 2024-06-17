@@ -68,7 +68,7 @@
         <update_guid_history>802de2db577c21105c6221151a4949c4:-696194611</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 2023-02-10 01:09:27">30ada36f1bb8a110780843f28d4bcb0a</sys_audit_delete>
+        <sys_audit_delete display_value="">30ada36f1bb8a110780843f28d4bcb0a</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>mahesh.kuratti@plat4mation.com</sys_created_by>
         <sys_created_on>2023-02-10 09:09:27</sys_created_on>

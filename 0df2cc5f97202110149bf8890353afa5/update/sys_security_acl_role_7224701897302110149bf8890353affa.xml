@@ -14,6 +14,5 @@
         <sys_updated_by>prabhudev.terani@plat4mation.com</sys_updated_by>
         <sys_updated_on>2023-02-09 05:42:09</sys_updated_on>
         <sys_user_role display_value="x_441145_csdm_migr.field_mapping_definition_user" name="x_441145_csdm_migr.field_mapping_definition_user">2e247cd497302110149bf8890353af0d</sys_user_role>
-        <transaction_id/>
     </sys_security_acl_role>
 </record_update>

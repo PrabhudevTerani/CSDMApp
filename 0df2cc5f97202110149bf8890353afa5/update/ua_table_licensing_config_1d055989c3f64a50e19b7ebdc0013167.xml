@@ -12,13 +12,13 @@
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>nagendra.swamy@plat4mation.com</sys_created_by>
         <sys_created_on>2023-02-09 14:18:05</sys_created_on>
-        <sys_id>c0ba631797f061103e607a200153af31</sys_id>
+        <sys_id>1d055989c3f64a50e19b7ebdc0013167</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_441145_csdm_migr_relationship_staging</sys_name>
         <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
         <sys_policy/>
         <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
-        <sys_update_name>ua_table_licensing_config_c0ba631797f061103e607a200153af31</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_1d055989c3f64a50e19b7ebdc0013167</sys_update_name>
         <sys_updated_by>nagendra.swamy@plat4mation.com</sys_updated_by>
         <sys_updated_on>2023-02-09 14:18:05</sys_updated_on>
     </ua_table_licensing_config>

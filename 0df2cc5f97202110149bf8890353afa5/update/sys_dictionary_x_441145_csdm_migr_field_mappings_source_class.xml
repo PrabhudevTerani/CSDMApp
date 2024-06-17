@@ -7,7 +7,7 @@
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
 	// Add your code here
-	return '';  // return the calculated value
+	return current.field_mapping_definition.source_class;  // return the source class from parent definition
 
 })(current);]]></calculation>
         <choice>1</choice>
@@ -57,15 +57,15 @@
         <sys_policy/>
         <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
         <sys_update_name>sys_dictionary_x_441145_csdm_migr_field_mappings_source_class</sys_update_name>
-        <sys_updated_by>prabhudev.terani@plat4mation.com</sys_updated_by>
-        <sys_updated_on>2023-02-09 05:40:11</sys_updated_on>
+        <sys_updated_by>Sneha.Gupta@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2024-06-13 11:18:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
+        <virtual>true</virtual>
         <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>

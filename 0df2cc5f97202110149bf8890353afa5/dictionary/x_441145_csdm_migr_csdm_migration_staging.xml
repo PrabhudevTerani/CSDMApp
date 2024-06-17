@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="81eda0a3973861103e607a200153af79" extends="cmdb_ci" label="CSDM Migration Staging" max_length="40" name="x_441145_csdm_migr_csdm_migration_staging" type="collection">
+        <element attributes="json_view=true" label="IRE Payload" max_length="40000" name="ire_payload" type="string"/>
+        <element attributes="json_view=true" label="IRE Payload Response" max_length="40000" name="ire_response" type="string"/>
         <element label="Ready to Sync" max_length="40" name="ready_to_sync" type="boolean"/>
+        <element dependent="related_table_name" dependent_on_field="related_table_name" label="Related Record" max_length="32" name="related_ci" type="document_id" use_dependent_field="true"/>
+        <element label="Related Table Name" max_length="80" name="related_table_name" type="table_name"/>
         <element label="Target class" max_length="32" name="target_class" reference="sys_db_object" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Service classification" max_length="40" name="u_service_classification" type="string">
             <choice>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="CSDM Migration">45790ba133bac6500867ec634d5c7bc2</category>
+        <order>100</order>
+        <property display_value="x_441145_csdm_migr.migrate.relationships" name="x_441145_csdm_migr.migrate.relationships">90bd9061c33eca50e19b7ebdc0013183</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>Sneha.Gupta@plat4mation.com</sys_created_by>
+        <sys_created_on>2024-06-15 03:53:00</sys_created_on>
+        <sys_id>a8d90fa133bac6500867ec634d5c7b36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_441145_csdm_migr.migrate.relationships.CSDM Migration</sys_name>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_a8d90fa133bac6500867ec634d5c7b36</sys_update_name>
+        <sys_updated_by>Sneha.Gupta@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2024-06-15 03:53:00</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

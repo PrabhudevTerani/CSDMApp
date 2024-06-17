@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b1ad1989333646500867ec634d5c7b1d" label="Company System Applications" max_length="40" name="x_441145_csdm_migr_company_system_applications" type="collection">
+        <element label="Managed by" max_length="32" name="managed_by" reference="sys_user" type="reference"/>
+        <element label="Model ID" max_length="32" name="model_id" reference="cmdb_model" type="reference"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Owned by" max_length="32" name="owned_by" reference="sys_user" type="reference"/>
+        <element label="Parent" max_length="32" name="parent" reference="cmdb_ci_service" type="reference"/>
+        <element label="Short Description" max_length="40" name="short_description" type="string"/>
+        <element label="Support group" max_length="32" name="support_group" reference="sys_user_group" type="reference"/>
+        <element label="Vendor" max_length="32" name="vendor" reference="core_company" type="reference"/>
+        <element label="Version" max_length="40" name="version" type="string"/>
+        <index name="index">
+            <element name="managed_by"/>
+        </index>
+        <index name="index2">
+            <element name="model_id"/>
+        </index>
+        <index name="index3">
+            <element name="owned_by"/>
+        </index>
+        <index name="index4">
+            <element name="parent"/>
+        </index>
+        <index name="index5">
+            <element name="support_group"/>
+        </index>
+        <index name="index6">
+            <element name="vendor"/>
+        </index>
+    </element>
+</database>

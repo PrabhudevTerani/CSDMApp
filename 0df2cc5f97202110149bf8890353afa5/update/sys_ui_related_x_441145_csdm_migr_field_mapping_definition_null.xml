@@ -2,17 +2,31 @@
     <sys_ui_related sys_domain="global" table="x_441145_csdm_migr_field_mapping_definition" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Field Mapping Definition - Default view" name="x_441145_csdm_migr_field_mapping_definition" related_list="NULL" sys_domain="global" view="Default view">f2d2819497702110149bf8890353af46</list_id>
+            <list_id display_value="Field Mapping Definition - Default view" name="x_441145_csdm_migr_field_mapping_definition" related_list="NULL" sys_domain="global" view="Default view">36cc2319c33aca50e19b7ebdc0013115</list_id>
             <order_by/>
             <position>0</position>
             <related_list>x_441145_csdm_migr_field_mappings.field_mapping_definition</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-01-30 18:23:03</sys_created_on>
-            <sys_id>b6d24d9497702110149bf8890353af74</sys_id>
+            <sys_created_by>Argha.Nandan@plat4mation.com</sys_created_by>
+            <sys_created_on>2024-06-14 11:47:19</sys_created_on>
+            <sys_id>b6cc2319c33aca50e19b7ebdc0013116</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-01-30 18:23:03</sys_updated_on>
+            <sys_updated_by>Argha.Nandan@plat4mation.com</sys_updated_by>
+            <sys_updated_on>2024-06-14 11:47:19</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Field Mapping Definition - Default view" name="x_441145_csdm_migr_field_mapping_definition" related_list="NULL" sys_domain="global" view="Default view">36cc2319c33aca50e19b7ebdc0013115</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>REL:00cbefd5c33aca50e19b7ebdc00131c5</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Argha.Nandan@plat4mation.com</sys_created_by>
+            <sys_created_on>2024-06-14 11:47:19</sys_created_on>
+            <sys_id>becc2319c33aca50e19b7ebdc0013116</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Argha.Nandan@plat4mation.com</sys_updated_by>
+            <sys_updated_on>2024-06-14 11:47:19</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Field Mapping Definition - Default view</calculated_name>
@@ -22,19 +36,19 @@
             <position/>
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-01-30 18:23:03</sys_created_on>
+            <sys_created_by>Argha.Nandan@plat4mation.com</sys_created_by>
+            <sys_created_on>2024-06-14 11:47:19</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>f2d2819497702110149bf8890353af46</sys_id>
+            <sys_id>36cc2319c33aca50e19b7ebdc0013115</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Field Mapping Definition - Default view</sys_name>
             <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
             <sys_policy/>
             <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
             <sys_update_name>sys_ui_related_x_441145_csdm_migr_field_mapping_definition_null</sys_update_name>
-            <sys_updated_by>prabhudev.terani@plat4mation.com</sys_updated_by>
-            <sys_updated_on>2023-02-09 05:42:10</sys_updated_on>
+            <sys_updated_by>Argha.Nandan@plat4mation.com</sys_updated_by>
+            <sys_updated_on>2024-06-14 11:47:19</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

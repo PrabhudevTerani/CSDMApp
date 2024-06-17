@@ -10,6 +10,131 @@
         <script><![CDATA[var MigrationServiceUtils = Class.create();
 MigrationServiceUtils.prototype = {
     initialize: function() {},
+
+    /**Start of scripts used for migration between different instances */
+    /*
+     *Parameter fieldMapDefRec: sys id of field mapping definition record recieved by click of UI action
+     */
+    migrateRelevantCis: function(fieldMapDefRec) {
+        var mapObj = {};
+        var globalUtils = new global.MigrationServiceUtilsGlobal();
+        var grMappingDef = new GlideRecord('x_441145_csdm_migr_field_mapping_definition');
+        if (grMappingDef.get(fieldMapDefRec)) {
+            var query = '';
+            if (grMappingDef.getValue('conditions'))
+                query = grMappingDef.getValue('conditions');
+
+            var grCi = new GlideRecord(grMappingDef.source_class.name);
+            grCi.addEncodedQuery(query);
+            grCi.query();
+            while (grCi.next()) {
+                mapObj = JSON.parse(this.getStagingCiMap(fieldMapDefRec, grCi));
+                var grStag = new GlideRecord('x_441145_csdm_migr_csdm_migration_staging');
+                grStag.addQuery('related_ci', grCi.getUniqueValue());
+                grStag.query();
+                if (grStag.next()) {
+                    for (var i in mapObj.stagObj) {
+                        if (!grStag.isValidField(i)) {
+                            globalUtils.createFieldOnStaging(i);
+                        }
+                        grStag[i] = mapObj.stagObj[i];
+                    }
+                    grStag.setValue('target_class', mapObj.target_class);
+                    grStag.setValue('related_table_name', String(grCi.getTableName()));
+                    grStag.update();
+                } else {
+                    grStag.initialize();
+                    for (var j in mapObj.stagObj) {
+                        grStag[j] = mapObj.stagObj[j];
+                    }
+                    grStag.setValue('target_class', mapObj.target_class);
+                    grStag.setValue('related_ci', grCi.getUniqueValue());
+                    grStag.setValue('related_table_name', String(grCi.getTableName()));
+                    var stgID = grStag.insert();
+                    if (stgID) {
+                        grCi.setValue('x_441145_csdm_migr_staging_record', stgID);
+                        grCi.update();
+                    }
+                }
+            }
+        }
+    },
+
+    getStagingCiMap: function(fieldMapDefRec, grCi) {
+        var stagObj = {};
+        var returnObj = {};
+        var grFieldMaps = new GlideRecord('x_441145_csdm_migr_field_mappings');
+        grFieldMaps.addEncodedQuery("field_mapping_definition=" + fieldMapDefRec);
+        grFieldMaps.query();
+        while (grFieldMaps.next()) {
+            stagObj[grFieldMaps.source_field.element] = grCi.getValue(grFieldMaps.target_field.element);
+        }
+
+        returnObj = {
+            'target_class': String(grFieldMaps.field_mapping_definition.target_class),
+            'stagObj': stagObj
+        };
+
+        return JSON.stringify(returnObj);
+    },
+
+    createIREPayloadForMigration: function(recordId) {
+
+        var payloadForIRE = {
+            "items": [{
+                "className": "",
+                "lookup": [],
+                "values": {},
+                "internal_id": "primary_ci_id"
+            }],
+            "relations": [],
+            "referenceItems": []
+        };
+
+        var migrateGr = new GlideRecord('x_441145_csdm_migr_csdm_migration_staging');
+        migrateGr.addQuery('sys_id', recordId);
+        migrateGr.query();
+        if (migrateGr.next()) {
+
+            var values = {};
+            // a sys_id of a incident
+            for (var key in migrateGr) {
+                if (this.isSkip(key, migrateGr[key])) {
+                    values[key] = String(migrateGr[key]);
+                }
+            }
+            payloadForIRE.items[0].className = migrateGr.target_class.name.toString();
+            payloadForIRE.items[0].values = values;
+            return JSON.stringify(payloadForIRE);
+        }
+
+    },
+
+    isSkip: function(key, value) {
+        if (value != '' && value != null && !key.startsWith('sys_') && key != 'related_ci' && key != 'related_table_name' && key != 'target_class' && key != 'x_441145_csdm_migr_staging_record' && !(key.startsWith('ire_'))) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+
+    createTargetRelationships: function(srcId, trgId) {
+        var relationsGr = new GlideRecord('cmdb_rel_ci');
+        relationsGr.addEncodedQuery('parent='+ srcId +'^ORchild=' + srcId);
+        relationsGr.query();
+
+        while (relationsGr.next()){
+			relationsGr.parent == srcId ? relationsGr.parent = trgId : relationsGr.child = trgId;
+			relationsGr.update();
+		}
+
+    },
+
+
+    /**End of script used for migration between same instance */
+
+    //-------------------------------------------------------------------------------
+    /**Start of scripts used for migration between different instances */
     createStgRec: function(recID) {
         var grC = new GlideRecord('cmdb_ci');
         if (grC.get(recID)) {
@@ -121,13 +246,13 @@ MigrationServiceUtils.prototype = {
         <sys_created_by>mahesh.kuratti@plat4mation.com</sys_created_by>
         <sys_created_on>2023-02-09 20:48:39</sys_created_on>
         <sys_id>c504c5e31b30a110780843f28d4bcb11</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>55</sys_mod_count>
         <sys_name>MigrationServiceUtils</sys_name>
         <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
         <sys_update_name>sys_script_include_c504c5e31b30a110780843f28d4bcb11</sys_update_name>
-        <sys_updated_by>mahesh.kuratti@plat4mation.com</sys_updated_by>
-        <sys_updated_on>2023-02-11 06:13:02</sys_updated_on>
+        <sys_updated_by>Argha.Nandan@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2024-06-14 17:23:10</sys_updated_on>
     </sys_script_include>
 </record_update>

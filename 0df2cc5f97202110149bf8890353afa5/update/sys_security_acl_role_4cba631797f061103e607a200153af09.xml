@@ -14,6 +14,5 @@
         <sys_updated_by>nagendra.swamy@plat4mation.com</sys_updated_by>
         <sys_updated_on>2023-02-09 14:18:05</sys_updated_on>
         <sys_user_role display_value="x_441145_csdm_migr.relationship_staging_user" name="x_441145_csdm_migr.relationship_staging_user">3faa6bd397f061103e607a200153af99</sys_user_role>
-        <transaction_id/>
     </sys_security_acl_role>
 </record_update>

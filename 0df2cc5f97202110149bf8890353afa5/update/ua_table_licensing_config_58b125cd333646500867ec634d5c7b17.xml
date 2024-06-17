@@ -4,22 +4,22 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>x_441145_csdm_migr_csdm_migration_staging</name>
+        <name>x_441145_csdm_migr_company_system_applications</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
-        <sys_created_by>nagendra.swamy@plat4mation.com</sys_created_by>
-        <sys_created_on>2023-02-09 19:12:42</sys_created_on>
-        <sys_id>6b1eace3973861103e607a200153af8c</sys_id>
+        <sys_created_by>Sneha.Gupta@plat4mation.com</sys_created_by>
+        <sys_created_on>2024-06-13 07:01:06</sys_created_on>
+        <sys_id>58b125cd333646500867ec634d5c7b17</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_441145_csdm_migr_csdm_migration_staging</sys_name>
+        <sys_name>x_441145_csdm_migr_company_system_applications</sys_name>
         <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
         <sys_policy/>
         <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
-        <sys_update_name>ua_table_licensing_config_6b1eace3973861103e607a200153af8c</sys_update_name>
-        <sys_updated_by>nagendra.swamy@plat4mation.com</sys_updated_by>
-        <sys_updated_on>2023-02-09 19:12:42</sys_updated_on>
+        <sys_update_name>ua_table_licensing_config_58b125cd333646500867ec634d5c7b17</sys_update_name>
+        <sys_updated_by>Sneha.Gupta@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2024-06-13 07:01:06</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

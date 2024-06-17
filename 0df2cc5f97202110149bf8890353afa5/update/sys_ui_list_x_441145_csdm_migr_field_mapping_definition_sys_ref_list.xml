@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="x_441145_csdm_migr_field_mapping_definition" element="NULL" name="x_441145_csdm_migr_field_mapping_definition" parent="NULL" relationship="NULL" sys_domain="global" view="d3552271db0113003cba7646bf961981">a486a10697702110149bf8890353af01</list_id>
+            <list_id display_value="x_441145_csdm_migr_field_mapping_definition" element="NULL" name="x_441145_csdm_migr_field_mapping_definition" parent="NULL" relationship="NULL" sys_domain="global" view="2356c372c3120210e19b7ebdc0013195">a486a10697702110149bf8890353af01</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -40,7 +40,7 @@
             <sys_updated_by>prabhudev.terani@plat4mation.com</sys_updated_by>
             <sys_updated_on>2023-02-09 05:42:09</sys_updated_on>
             <sys_user/>
-            <view display_value="Reference List" name="sys_ref_list">d3552271db0113003cba7646bf961981</view>
+            <view display_value="Reference List" name="sys_ref_list">2356c372c3120210e19b7ebdc0013195</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

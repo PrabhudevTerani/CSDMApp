@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>!current.source_class.nil() &amp;&amp; !current.target_class.nil()</condition>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>true</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Auto Map Matching Fields</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[current.update();
+var sourceGR = new GlideRecord(current.source_class.name);
+sourceGR.initialize();
+var targetGR = new GlideRecord(current.target_class.name);
+targetGR.initialize();
+
+// var v1 = new global.GlideRecordUtil().getGR(current.source_class.name, sourceGR.getUniqueValue());
+// var v2 = new global.GlideRecordUtil().getGR(current.target_class.name, targetGR.getUniqueValue());
+var targetGRElements = sourceGR.getElements();
+var fields = targetGR.getElements();
+
+for (var i = 0; i < fields.length; i++) {
+    var field = fields[i];
+    var name = field.getName();
+    var label = field.getED().getLabel();
+
+    //skipe virtual fields like Tags 
+    // if (!field.getED().isInDatabase())
+    //     continue;
+
+    var tname = matchFields(name, label);
+    if (tname == null || (tname.getName() == 'manager' && targetGR.getElement(tname.getName()).getED().hasAttribute('no_auto_map')))
+        continue;
+
+    if (!isSkip(name) && tname != null && !isSkip(tname.getName())) {
+        createTransformEntry(field, tname);
+    }
+}
+
+gs.addInfoMessage("Field maps created");
+
+// var url = gs.generateURL(current.getTableName(), current.sys_id);
+gs.setRedirect(current.getLink());
+
+function isSkip(name) {
+    // skip sys fields
+    if (name == "x_441145_csdm_migr_staging_record" ||
+		name == "sys_created_on" ||
+        name == "sys_updated_on" ||
+        name == "sys_created_by" ||
+        name == "sys_updated_by" ||
+        name == "sys_mod_count" ||
+        name == "sys_class_name" ||
+        name == "sys_id" ||
+        name == "sys_import_set" ||
+        name == "sys_import_row" ||
+        name == "sys_import_state")
+        return true;
+
+    return false;
+}
+
+function createTransformEntry(sourceName, targetName) {
+	var s = new GlideRecord('sys_dictionary');
+	s.addQuery('name', sourceName.getTableName());
+	s.addQuery('element', sourceName.getName());
+	s.query(); s.next();
+
+	var t = new GlideRecord('sys_dictionary');
+	t.addQuery('name', targetName.getTableName());
+	t.addQuery('element', targetName.getName());
+	t.query(); t.next();
+
+    var entryGR = new GlideRecord("x_441145_csdm_migr_field_mappings");
+    entryGR.addQuery("field_mapping_definition", current.sys_id);
+    entryGR.addQuery("source_class", current.source_class);
+    entryGR.addQuery("source_field", s.sys_id);
+    entryGR.addQuery("target_class", current.target_class);
+    entryGR.addQuery("target_field", t.sys_id);
+    entryGR.query();
+    if (!entryGR.next()) {
+        entryGR.field_mapping_definition = current.sys_id;
+        entryGR.source_class = current.source_class;
+        entryGR.source_field = s.sys_id;
+        entryGR.target_class = current.target_class;
+        entryGR.target_field = t.sys_id;
+        entryGR.insert();
+    }
+}
+
+function matchFields(name, label) {
+    var tname = matchName(name);
+	gs.info('[AutoMap] Matching Field {0} : {1}', name, label);
+    if (tname != null)
+        return tname;
+
+    tname = matchLabel(label);
+    if (tname != null)
+        return tname;
+
+    tname = matchLabelToName(label);
+    if (tname != null)
+        return tname;
+
+    return null;
+}
+
+function matchName(name) {
+    for (var i = 0; i < targetGRElements.length; i++) {
+        var field = targetGRElements[i];
+
+        if (name == field.getName()) {
+            return field;
+        }
+    }
+
+    return null;
+}
+
+function matchLabel(label) {
+    label = label.toLowerCase();
+
+    for (var i = 0; i < targetGRElements.length; i++) {
+        var field = targetGRElements[i];
+        var tlabel = field.getLabel().toLowerCase();
+
+        if (label == tlabel) {
+            return field;
+        }
+    }
+
+    return null;
+}
+
+function matchLabelToName(name) {
+    name = name.toLowerCase();
+
+    for (var i = 0; i < targetGRElements.length; i++) {
+        var field = targetGRElements[i];
+
+        if (name == field.getName()) {
+            return field;
+        }
+    }
+
+    return null;
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>Argha.Nandan@plat4mation.com</sys_created_by>
+        <sys_created_on>2024-06-13 14:01:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8841cf01c3b28a50e19b7ebdc0013163</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Auto Map Matching Fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_update_name>sys_ui_action_8841cf01c3b28a50e19b7ebdc0013163</sys_update_name>
+        <sys_updated_by>Argha.Nandan@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2024-06-14 05:33:41</sys_updated_on>
+        <table>x_441145_csdm_migr_field_mapping_definition</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

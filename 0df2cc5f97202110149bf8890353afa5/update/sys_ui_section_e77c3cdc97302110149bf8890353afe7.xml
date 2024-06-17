@@ -3,98 +3,98 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>field_mapping_definition</element>
             <position>0</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-01-30 18:40:57</sys_created_on>
-            <sys_id>01f68d9897702110149bf8890353afa6</sys_id>
+            <sys_created_by>Sneha.Gupta@plat4mation.com</sys_created_by>
+            <sys_created_on>2024-06-13 11:15:10</sys_created_on>
+            <sys_id>02db9a0d333a46500867ec634d5c7ba2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_441145_csdm_migr_field_mappings" sys_domain="global" view="Default view">e77c3cdc97302110149bf8890353afe7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-01-30 18:40:57</sys_updated_on>
+            <sys_updated_by>Sneha.Gupta@plat4mation.com</sys_updated_by>
+            <sys_updated_on>2024-06-13 11:15:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>field_mapping_definition.source_class</element>
+            <element>source_class</element>
             <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-01-30 18:40:57</sys_created_on>
-            <sys_id>81f68d9897702110149bf8890353afa6</sys_id>
+            <sys_created_by>Sneha.Gupta@plat4mation.com</sys_created_by>
+            <sys_created_on>2024-06-13 11:15:10</sys_created_on>
+            <sys_id>86db9a0d333a46500867ec634d5c7ba2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_441145_csdm_migr_field_mappings" sys_domain="global" view="Default view">e77c3cdc97302110149bf8890353afe7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-01-30 18:40:57</sys_updated_on>
+            <sys_updated_by>Sneha.Gupta@plat4mation.com</sys_updated_by>
+            <sys_updated_on>2024-06-13 11:15:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>source_field</element>
             <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-01-30 18:40:57</sys_created_on>
-            <sys_id>05f68d9897702110149bf8890353afa6</sys_id>
+            <sys_created_by>Sneha.Gupta@plat4mation.com</sys_created_by>
+            <sys_created_on>2024-06-13 11:15:10</sys_created_on>
+            <sys_id>0adb9a0d333a46500867ec634d5c7ba2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_441145_csdm_migr_field_mappings" sys_domain="global" view="Default view">e77c3cdc97302110149bf8890353afe7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-01-30 18:40:57</sys_updated_on>
+            <sys_updated_by>Sneha.Gupta@plat4mation.com</sys_updated_by>
+            <sys_updated_on>2024-06-13 11:15:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-01-30 18:40:57</sys_created_on>
-            <sys_id>85f68d9897702110149bf8890353afa6</sys_id>
+            <sys_created_by>Sneha.Gupta@plat4mation.com</sys_created_by>
+            <sys_created_on>2024-06-13 11:15:10</sys_created_on>
+            <sys_id>8adb9a0d333a46500867ec634d5c7ba2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_441145_csdm_migr_field_mappings" sys_domain="global" view="Default view">e77c3cdc97302110149bf8890353afe7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-01-30 18:40:57</sys_updated_on>
+            <sys_updated_by>Sneha.Gupta@plat4mation.com</sys_updated_by>
+            <sys_updated_on>2024-06-13 11:15:10</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>active</element>
             <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-01-30 18:40:57</sys_created_on>
-            <sys_id>09f68d9897702110149bf8890353afa6</sys_id>
+            <sys_created_by>Sneha.Gupta@plat4mation.com</sys_created_by>
+            <sys_created_on>2024-06-13 11:15:10</sys_created_on>
+            <sys_id>0edb9a0d333a46500867ec634d5c7ba2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_441145_csdm_migr_field_mappings" sys_domain="global" view="Default view">e77c3cdc97302110149bf8890353afe7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-01-30 18:40:57</sys_updated_on>
+            <sys_updated_by>Sneha.Gupta@plat4mation.com</sys_updated_by>
+            <sys_updated_on>2024-06-13 11:15:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>field_mapping_definition.target_class</element>
+            <element>target_class</element>
             <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-01-30 18:40:57</sys_created_on>
-            <sys_id>89f68d9897702110149bf8890353afa6</sys_id>
+            <sys_created_by>Sneha.Gupta@plat4mation.com</sys_created_by>
+            <sys_created_on>2024-06-13 11:15:10</sys_created_on>
+            <sys_id>8edb9a0d333a46500867ec634d5c7ba2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_441145_csdm_migr_field_mappings" sys_domain="global" view="Default view">e77c3cdc97302110149bf8890353afe7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-01-30 18:40:57</sys_updated_on>
+            <sys_updated_by>Sneha.Gupta@plat4mation.com</sys_updated_by>
+            <sys_updated_on>2024-06-13 11:15:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>target_field</element>
             <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-01-30 18:40:57</sys_created_on>
-            <sys_id>0df68d9897702110149bf8890353afa6</sys_id>
+            <sys_created_by>Sneha.Gupta@plat4mation.com</sys_created_by>
+            <sys_created_on>2024-06-13 11:15:10</sys_created_on>
+            <sys_id>02db9a0d333a46500867ec634d5c7ba3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_441145_csdm_migr_field_mappings" sys_domain="global" view="Default view">e77c3cdc97302110149bf8890353afe7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-01-30 18:40:57</sys_updated_on>
+            <sys_updated_by>Sneha.Gupta@plat4mation.com</sys_updated_by>
+            <sys_updated_on>2024-06-13 11:15:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

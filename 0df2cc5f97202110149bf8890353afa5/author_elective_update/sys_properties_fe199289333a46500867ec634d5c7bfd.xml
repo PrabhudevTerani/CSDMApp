@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_441145_csdm_migr.csdm.tables.for.migration</name>
+        <read_roles/>
+        <suffix>csdm.tables.for.migration</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>Sneha.Gupta@plat4mation.com</sys_created_by>
+        <sys_created_on>2024-06-13 11:03:12</sys_created_on>
+        <sys_id>fe199289333a46500867ec634d5c7bfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_441145_csdm_migr.csdm.tables.for.migration</sys_name>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_update_name>sys_properties_fe199289333a46500867ec634d5c7bfd</sys_update_name>
+        <sys_updated_by>Sneha.Gupta@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2024-06-13 11:03:12</sys_updated_on>
+        <type>string</type>
+        <value>cmdb_ci,x_441145_csdm_migr_company_system_applications</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=fe199289333a46500867ec634d5c7bfd"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</application>
+        <file_path/>
+        <instance_id>fcf92ca8db0417003c3ff0e5bf961977</instance_id>
+        <instance_name>ven02380</instance_name>
+        <name>sys_properties_fe199289333a46500867ec634d5c7bfd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_441145_csdm_migr.csdm.tables.for.migration</name><read_roles/><suffix>csdm.tables.for.migration</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>Sneha.Gupta@plat4mation.com</sys_created_by><sys_created_on>2024-06-13 11:03:12</sys_created_on><sys_id>fe199289333a46500867ec634d5c7bfd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_441145_csdm_migr.csdm.tables.for.migration</sys_name><sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package><sys_policy/><sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope><sys_update_name>sys_properties_fe199289333a46500867ec634d5c7bfd</sys_update_name><sys_updated_by>Sneha.Gupta@plat4mation.com</sys_updated_by><sys_updated_on>2024-06-13 11:03:12</sys_updated_on><type>string</type><value>cmdb_ci,x_441145_csdm_migr_company_system_applications</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=fe199289333a46500867ec634d5c7bfd"/></record_update>]]></payload>
+        <payload_hash>-1133905121</payload_hash>
+        <record_name>x_441145_csdm_migr.csdm.tables.for.migration</record_name>
+        <reverted_from/>
+        <source>1c8d5d49333646500867ec634d5c7b81</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Sneha.Gupta@plat4mation.com</sys_created_by>
+        <sys_created_on>2024-06-13 11:03:13</sys_created_on>
+        <sys_id>c719d289333a46500867ec634d5c7b01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190114416a40000001</sys_recorded_at>
+        <sys_updated_by>Sneha.Gupta@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2024-06-13 11:03:13</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>0f19d289183a46509abe168fc44fda00</update_guid>
+        <update_guid_history>0f19d289183a46509abe168fc44fda00:-1133905121</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Sneha.Gupta@plat4mation.com</sys_created_by>
+        <sys_created_on>2024-06-14 10:55:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>19c93dfbba9b4de086f1aaad5c764100</sys_id>
+        <sys_metadata>fe199289333a46500867ec634d5c7bfd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_441145_csdm_migr.csdm.tables.for.migration</sys_name>
+        <sys_package display_value="CSDM Migration" source="x_441145_csdm_migr">0df2cc5f97202110149bf8890353afa5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CSDM Migration">0df2cc5f97202110149bf8890353afa5</sys_scope>
+        <sys_scope_delete display_value="">00ed709270784b088ef2c5e061581ea4</sys_scope_delete>
+        <sys_update_name>sys_properties_fe199289333a46500867ec634d5c7bfd</sys_update_name>
+        <sys_update_version display_value="sys_properties_fe199289333a46500867ec634d5c7bfd">c719d289333a46500867ec634d5c7b01</sys_update_version>
+        <sys_updated_by>Sneha.Gupta@plat4mation.com</sys_updated_by>
+        <sys_updated_on>2024-06-14 10:55:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
